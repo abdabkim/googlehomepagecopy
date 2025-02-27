@@ -1,29 +1,108 @@
-/**{
+* {
     margin: 0;
-    padding:0;
-    background: #414040;
+    padding: 0;
     font-family: 'Product Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #414040;
+    min-height: 100vh;
 }
 
 /*Navigation Bar Styles*/
-/*
-.main{
-    display:flex;
-    padding:10px 5px 10px 5px;
-    float: right;
-    color:white;
 
-}*/
-nav li{
+.main {
+    display: flex;
+    padding: 10px 5px 10px 5px;
+    float: right;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #3b3b3b;
+}
+
+nav li {
     text-decoration: none;
     list-style: none;
     padding: 10px 10px 10px 10px;
     display: inline;
 }
-nav a{
+
+nav a {
     text-decoration: none;
-    color: rgb(192, 45, 45);
+    color: rgb(255, 255, 255);
+}
+li img{
+    height:20px;
+    width:20px;
 }
 
+.form-container {
+    background-color:#3b3b3b;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainsearch{
+    align-items:center;
+    text-align: center;
+    padding-bottom: 30px;
+}
 
+/*Form*/
+label{
+    color:white;
+    font-size: 120px;
+}
+
+input{
+    border-radius: 20px;
+    color:black;
+    width:100%;
+    height:40px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.search-container input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+.image-icon {
+    position: absolute;
+    right: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Right-aligned microphone icon */
+.searchmic {
+    position: absolute;
+    right: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+.cursor-center {
+    text-align: center;
+    height:35px;
+}
 

@@ -7,23 +7,38 @@
 			href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=filter_center_focus"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Google Home Page</title>
 	</head>
 	<body>
-		<div class="navigation">
-			<nav>
-				<ul class="main">
-					<li><a href="#">Gmail</a></li>
-					<li><a href="">Images</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div>
-			<form>
-				<label for="search">Google</label><br />
-				<input type="search" />
-				<button type="submit">Submit</button>
+		<nav>
+			<ul class="main">
+				<li><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
+				<li>
+					<a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
+				</li>
+				<li><img src="app.png" /></li>
+			</ul>
+		</nav>
+
+		<div class="form-container">
+			<form action="https://www.google.com">
+				<div class="mainsearch"> <label for="search" >Google</label><br /></div>
+				<div class="search-container">
+					<img src="image.png" class="image-icon" />
+					<input
+						type="search"
+						name="q"
+						class="basic-form-field cursor-center"
+						placeholder="Search..."
+					/>
+					<img src="mic.png" class="searchmic" />
+				</div>
+				<br />
 			</form>
 		</div>
 	</body>

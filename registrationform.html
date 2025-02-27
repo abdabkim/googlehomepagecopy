@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kim Run For Chariity Race Event</title>
+	</head>
+	<body>
+		<h1>Race Registration!</h1>
+		<form action="">
+				<label for="first">First Name</label>
+				<input type="text" name="firstname" id="first" required />
+				<label for="last">Last Name</label>
+				<input type="text" name="firstname" id="last" required />
+		
+			<p>Select a race:</p>
+				<div>
+				<input type="radio" name="Maranthon" id="funrun"  value="funrun" />
+				<label>Fun Run</label>
+				</div>
+				<div>
+				<input type="radio" name="Maranthon" id="halfrun" value="halfrun"  />
+				<label>Half Maranthon</label>
+				</div>
+				<div>
+				<input type="radio" name="Maranthon" id="fullrun" value="fullrun" />
+				<label>Full Maranthon</label>
+				</div>
+				<div>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email"  required/>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" required />
+				</div>
+
+				<div>
+				<label for="age">Select Age Group:</label>
+				<select name="age" id="age" required>
+					<option value="kids">--under 18--</option>
+					<option value="ya">18 - 30</option>
+					<option value="adults">30 - 50</option>
+					<option value="seniors">50+</option>
+				</select>
+				</div>
+				<button type="submit">Register</button>
+			</p>
+		</form>
+	</body>
+</html>
